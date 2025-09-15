@@ -2,9 +2,9 @@ This directory contains
 
   sdss_sne : A starter module to read in and plot SDSS SNe Ia light curves.
   
-  Example usage :
+  Example usage to save a light curve as a png file to the current directory :
   
   import sdss_sne
-  sdss_sne.plotsn ("_data/SN8151.snphot-5.04.sum")
+  sdss_sne.saveplotsn ("_data/SN8151.snphot-5.04.sum")
 
   _data : A subdirectory containing the SDSS SNe Ia light curve data.
