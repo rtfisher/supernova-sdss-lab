@@ -21,6 +21,9 @@
 
 import string
 import numpy as np
+import matplotlib
+matplotlib.use("module://matplotlib_inline.backend_inline")
+matplotlib.use("Agg")       # headless backend
 import matplotlib.pyplot as plt
 
 def readsn (file, verbose = 1):
@@ -166,4 +169,4 @@ def saveplotsn (file):
    ax.set_xlabel ("Time (MJD)")
    ax.set_ylabel ("Magnitude")
    ax.set_title ("Light Curve SN " + snstring)
-   plt.savefig (snstring + '_magn', format = 'pdf')
+   plt.savefig (snstring + '_magn.png', format = 'png')
